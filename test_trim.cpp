@@ -33,7 +33,7 @@ TEST(empty_substring)
 /******************************************************************************
  * total_string: describe yourself.
  *
- *
+ *	test for strcpy
  ******************************************************************************/
 TEST(total_string)
 {
@@ -47,7 +47,7 @@ TEST(total_string)
 /******************************************************************************
  * leading_blanks: describe yourself.
  *
- *
+ *	removing front blanks
  ******************************************************************************/
 TEST(leading_blanks)
 {
@@ -61,7 +61,7 @@ TEST(leading_blanks)
 /******************************************************************************
  * trailing_blanks: describe yourself.
  *
- *
+ *removing back blanks
  ******************************************************************************/
 TEST(trailing_blanks)
 {
@@ -74,7 +74,7 @@ TEST(trailing_blanks)
 
 /******************************************************************************
  * leading_and_trailing_blanks: describe yourself.
- *
+ *	removing front and back blanks
  *
  ******************************************************************************/
 TEST(leading_and_trailing_blanks)
