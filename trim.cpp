@@ -19,6 +19,12 @@
 void 	trim (const char *source, char *trimmed_string)
 {
   strcpy(trimmed_string, source);
+  front(trimmed_string);
+  back(trimmed_string);
+
+}
+void front(char *trimmed_string)
+{
   int len = strlen(trimmed_string);
   int count = 0;
   bool IsTrimmed = false;
@@ -37,8 +43,6 @@ void 	trim (const char *source, char *trimmed_string)
   }
   newLen = len - count;
   char *TrimmedFront = new char[newLen];
-
-
   int posTrimmedString = count;
   for(int i = 0; i < newLen; i++)
   {
@@ -46,22 +50,13 @@ void 	trim (const char *source, char *trimmed_string)
     posTrimmedString++;
   }
   strcpy(trimmed_string, TrimmedFront);
-
-
-
-
-
-
-
-
-
-
-
-  len = strlen(trimmed_string);
-  count = 0;
-  IsTrimmed = false;
-  newLen = 0;
-
+}
+void back(char *trimmed_string)
+{
+  int len = strlen(trimmed_string);
+  int count = 0;
+  bool IsTrimmed = false;
+  int newLen = 0;
   for(int i = len-1; i < len && IsTrimmed == false; i--)
   {
     if (trimmed_string[i] == ' ')

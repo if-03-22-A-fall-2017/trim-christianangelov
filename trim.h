@@ -15,5 +15,6 @@
  #define  ___TRIM_H
  #define STRLEN 16
   void 	trim (const char *source, char *trimmed_string);
-
+  void front(char *trimmed_string);
+  void back(char *trimmed_string);
  #endif
